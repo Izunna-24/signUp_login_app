@@ -1,9 +1,9 @@
-import style from './index.module.css';
+import style from '../../components/filledButtons/index.module.css';
 
 const FilledButton = ({text}) => {
     return(
         <div>
-            <button className={style.btn}>{text}</button>
+            <button type ='submit' className={style.btn}>{text}</button>
         </div>
     )
 }

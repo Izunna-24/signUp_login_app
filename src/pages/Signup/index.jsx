@@ -1,18 +1,15 @@
+import image from "../../../src/assets/signup.png"
 import PageTemplate from "../../components/pageTemplate";
-import image from "../../assets/signup.png";
 
-const Signup = () => {
-    return(
+const SignUp = () => {
+    return (
         <>
-            <PageTemplate image={image} headerName={"Welcome!"}
-                          underHeader={"sign up by entering the information below"}
-            holder1={"firstname"} holder2={"lastname"}
-            holder3={"username"} holder4={"password"}
-            buttonText={"Sign up"}/>
-
-
+            <PageTemplate image={image} headerName={"Welcome"}
+                          message={"Enter details to register"} buttonText={"Sign Up"}
+                          firstName={"Firstname:"} lastName={"Lastname:"} username={"username:"}
+                          lastname={"password:"}/>
         </>
     )
 }
 
-export default Signup;
+export default SignUp;
