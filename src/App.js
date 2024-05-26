@@ -1,4 +1,4 @@
-import Signup from "./pages/Signup";
+import Register from "./pages/Register";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Login from "./pages/Login";
 import './App.css';
@@ -9,7 +9,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route element ={<Login/>} path={'/login'}/>
-              <Route element ={<Signup/>} path={'/signup'}/>
+              <Route element ={<Register/>} path={'/register'}/>
           </Routes>
         </BrowserRouter>
       </>
