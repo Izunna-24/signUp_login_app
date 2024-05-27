@@ -18,7 +18,7 @@ const validationSchema = Yup.object().shape({
 const PageTemplate = ({ image, headerName, message, buttonText, noAccountMessage, link, buttonTextOne }) => {
     const [isLoading, setIsLoading] = useState(false);
 
-    const submitButton = async (values, { resetForm }) => {
+    const submitButton = async (values, {resetForm}) => {
         setIsLoading(true);
         try {
             const payload = {
@@ -39,7 +39,7 @@ const PageTemplate = ({ image, headerName, message, buttonText, noAccountMessage
                 });
                 resetForm();
             } else {
-                toast.error('Login failed, check your details and try again', {
+                toast.error('Login failed', {
                     position: 'top-left',
                     autoClose: 3000,
                     hideProgressBar: false,
@@ -51,7 +51,7 @@ const PageTemplate = ({ image, headerName, message, buttonText, noAccountMessage
             }
         } catch (error) {
             console.error('Error during login:', error);
-            toast.error('Login failed, check your details and try again', {
+            toast.error("could not find your todoByTomCatAccount", {
                 position: 'top-center',
                 autoClose: 3000,
                 hideProgressBar: false,

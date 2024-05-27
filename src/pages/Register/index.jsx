@@ -5,10 +5,15 @@ const Register = () => {
     return (
         <>
             <PageTemplate image={image} headerName={"Welcome"}
-                          message={"Enter details to register"} buttonText={"Register"}
-                          firstName={"Firstname:"} lastName={"Lastname:"} username={"username:"}
+                          message={"Enter details to register"}
+                          buttonText={"Register"}
+                          firstName={"Firstname:"}
+                          lastName={"Lastname:"}
+                          username={"username:"}
                           lastname={"password:"}/>
+
         </>
+
     )
 }
 
